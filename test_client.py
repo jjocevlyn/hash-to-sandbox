@@ -1,15 +1,3 @@
-"""
-Simulate browser extension workflow test the backend without installing an extension.
-
-Workflow: 
-  1. Calculate file SHA-256 hash -> POST /inspect
-  2. (If NEED_FILE) POST /submit (Backend forwards binary to CAPEv2 on Laptop C)
-  3. Poll GET /result/{task_id} until verdict is no longer PENDING.
-
-Optional Environment Variables:
-    BACKEND_URL : Backend address (default: http://127.0.0.1:5000)
-    API_KEY     : Secret key (if enabled on backend)
-"""
 import hashlib
 import os
 import sys
