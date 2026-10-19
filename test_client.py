@@ -17,16 +17,16 @@ import time
 
 import requests
 
-# Base configuration
+#Base configuration
 BASE = os.getenv("BACKEND_URL", "http://127.0.0.1:5000")
 API_KEY = os.getenv("API_KEY", "")
 HEADERS = {"X-API-Key": API_KEY} if API_KEY else {}
-POLL_EVERY = 3  # Time interval (seconds) between result polling requests
-GIVE_UP = 900   # Maximum wait timeout (seconds)
 
+POLL_EVERY = 30  #Time interval (seconds) between result polling requests
+GIVE_UP = 600    #Maximum wait timeout (seconds)
 
 def sha256_of(path: str) -> str:
-    """Calculate SHA-256 cryptographic digest of a local file."""
+    # Calculate SHA-256 cryptographic digest of a local file.
     h = hashlib.sha256()
     with open(path, "rb") as f:
         for chunk in iter(lambda: f.read(1024 * 1024), b""):

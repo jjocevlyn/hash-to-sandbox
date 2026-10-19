@@ -3,7 +3,7 @@ cd /d C:\backend_hasht
 call venv\Scripts\activate
 
 set CAPE_URL=http://100.98.98.28:8000
-set CAPE_TOKEN=881a75417c98b12bcd63ffb410725ff067fe8728
+set CAPE_TOKEN=3fa8fdbd38e285b1d4b108cae356530eabf44c4a
 
 set MODE=B
 
