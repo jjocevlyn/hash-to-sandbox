@@ -1,0 +1,25 @@
+# Python Environment
+venv/
+__pycache__/
+*.pyc
+
+# Environment Secrets
+.env
+*.env
+
+# Malware & Dynamic Executable Test Files (AGAR TIDAK TER-PUSH FILE MALWARE)
+*.exe
+*.zip
+*.bin
+*.com
+sample.zip
+asyncrat_test.exe
+eicar_test.com
+
+# Logs & Database Cache
+logs/
+known_hashes.csv
+
+# OS Files
+.DS_Store
+Thumbs.db
