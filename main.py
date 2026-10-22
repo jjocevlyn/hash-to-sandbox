@@ -13,7 +13,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 # ---------- Configuration (Environment Variables) ----------
-CAPE_URL = os.getenv("CAPE_URL", "http://100.98.98.28:8000").rstrip("/")
+CAPE_URL = os.getenv("CAPE_URL", "http://YOUR_IP:8000").rstrip("/")
 #The token is read ONLY from the environment (set it in run_backend.bat).
 CAPE_TOKEN = os.getenv("CAPE_TOKEN", "")
 CAPE_CHECK_PATH = os.getenv("CAPE_CHECK_PATH", "/apiv2/cuckoo/status/")
